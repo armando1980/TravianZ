@@ -648,7 +648,7 @@ if($session->access != BANNED){
                 }
                 }
                 $reference =  $database->addAttack($enforce['from'],$post['t1'],$post['t2'],$post['t3'],$post['t4'],$post['t5'],$post['t6'],$post['t7'],$post['t8'],$post['t9'],$post['t10'],$post['t11'],2,0,0,0,0);
-                $database->addMovement(4,$village->wid,$enforce['from'],$reference,time(),($time+time()));
+                $database->addMovement(4,$enforce['vref'],$enforce['from'],$reference,time(),($time+time()));
                 $technology->checkReinf($post['ckey']);
 
                         header("Location: build.php?id=39");
